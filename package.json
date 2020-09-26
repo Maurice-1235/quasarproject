@@ -6,6 +6,17 @@
   "author": "Maurice <mauricepurnawan@gmail.com>",
   "private": true,
   "scripts": {
+    "dev": "quasar dev",
+    "dev:pwa": "quasar dev -m pwa",
+    "dev:android": "quasar dev -m capacitor -T android",
+    "dev:ios": "quasar dev -m capacitor -T ios",
+    "dev:elec": "quasar dev -m electron",
+    "build": "quasar build",
+    "build:pwa": "quasar build -m pwa",
+    "build:android": "quasar build -m capacitor -T android",
+    "build:ios": "quasar build -m capacitor -T ios",
+    "build:elec": "quasar build -m electron",
+    "build:elecns": "quasar build -m electron -- --no-sandbox --disable-setuid-sandbox",
     "lint": "eslint --ext .js,.vue ./",
     "test": "echo \"No test specified\" && exit 0"
   },
@@ -25,7 +36,8 @@
     "eslint-plugin-node": "^11.0.0",
     "eslint-plugin-promise": "^4.0.1",
     "eslint-plugin-standard": "^4.0.0",
-    "eslint-plugin-vue": "^6.1.2"
+    "eslint-plugin-vue": "^6.1.2",
+    "workbox-webpack-plugin": "^5.1.4"
   },
   "browserslist": [
     "last 10 Chrome versions",
